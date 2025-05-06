@@ -69,12 +69,12 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2022. All rights reserved.
 
 
-[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/ChartXY.html
-[Axis]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/Axis.html
-[Rectangle series]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/RectangleSeries.html
-[Rectangle figure]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/RectangleFigure.html
-[Segment series]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/SegmentSeries.html
-[Segment figure]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/SegmentFigure.html
-[Text series]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/TextSeries.html
-[Text figure]: https://lightningchart.com/js-charts/api-documentation/v7.0.1/classes/TextFigure.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/ChartXY.html
+[Axis]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/Axis.html
+[Rectangle series]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/RectangleSeries.html
+[Rectangle figure]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/RectangleFigure.html
+[Segment series]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/SegmentSeries.html
+[Segment figure]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/SegmentFigure.html
+[Text series]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/TextSeries.html
+[Text figure]: https://lightningchart.com/js-charts/api-documentation/v7.1.0/classes/TextFigure.html
 
