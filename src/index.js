@@ -10,6 +10,7 @@ const lc = lightningChart({
         })
 const chart = lc
     .ChartXY({
+        legend: { visible: false },
         defaultAxisX: { type: 'linear-highPrecision' },
         theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
     })
@@ -44,14 +45,14 @@ chart.axisX
 chart.axisY.dispose()
 channels = channels.map((ch, i) => {
     const axisY = chart.addAxisY({ iStack: -i }).setTitle(ch.name).setTitleRotation(0).setMargins(2, 2)
-    const series = chart.addPointLineAreaSeries({ dataPattern: 'ProgressiveX', axisY }).setAreaFillStyle(emptyFill)
+    const series = chart.addLineSeries({ axisY, schema: { x: { auto: true }, y: {} } })
     return { ...ch, axisY, series }
 })
 
 Promise.all(channels.map((_) => createProgressiveTraceGenerator().setNumberOfPoints(100_000).generate().toPromise())).then((dataSet) => {
     channels.forEach((ch, i) =>
         ch.series.appendJSON(dataSet[i], {
-            y: 'y',
+            whitelist: ['y'],
             start: tStart,
             step: (tEnd - tStart) / dataSet[i].length,
         }),
